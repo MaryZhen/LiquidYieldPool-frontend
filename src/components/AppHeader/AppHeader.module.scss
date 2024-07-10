@@ -1,0 +1,106 @@
+@import "@src/styles/var.scss";
+.appheader {
+    height: var(--header-height);
+    padding: 0;
+    margin-bottom: -var(--header-height);
+    position: relative;
+    top: 0;
+    z-index: 999;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-y: hidden;
+    font-family: PingfangSC, Roboto;
+}
+.logo-container {
+    height: var(--header-height);
+    line-height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: inline-block;
+    background-image: url('~@/assets/images/c2m_logo.png');
+    width: 150px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    height: 100%;
+    .button {
+      width: 91px;
+      height: 44px;
+      border: 2px solid transparent;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: #ffffff;
+  
+      &.active {
+        border-color: transparent;
+        color: #ffb852;
+      }
+  
+      &:hover {
+        border-color: transparent;
+        color: #ffb852;
+        transform: scale(1.05);
+      }
+    }
+  }
+  div.wallet-button-mobile {
+    width: auto;
+    height: 48px;
+    border-radius: 27;
+    box-shadow: none;
+    // position: absolute;
+    // top: 160px;
+    // right: 0;
+    z-index: 100;
+    background-image: none;
+    text-align: left;
+    color: #ffffff;
+    line-height: 48px;
+    cursor: pointer;
+  
+    &:hover {
+      filter: brightness(1);
+      box-shadow: none;
+    }
+  }
+  
+  .menu-item a {
+    height: 48px;
+    line-height: 48px;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+  
+    &:hover {
+      color: #ffb852;
+    }
+  }
+  
+  .menu-item .active {
+    color: #ffb852;
+    cursor: not-allowed;
+  }
+  
+  .sider-background {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: transparent;
+  }

@@ -1,5 +1,5 @@
 {
-  "name": "liquidyieldpool-fe-new",
+  "name": "liquidyieldpool-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.7",
     "@reduxjs/toolkit": "^2.2.6",
+    "@types/react-redux": "^7.1.33",
+    "@web3-react/core": "^8.2.3",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
     "antd": "^5.19.1",
-    "next": "14.2.4",
+    "ethers": "^6.13.1",
+    "next": "^14.2.4",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9.1.2"

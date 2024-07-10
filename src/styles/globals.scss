@@ -1,0 +1,12 @@
+@import "./var.scss";
+@import "./icons.scss";
+@import "./media.scss";
+body {
+    padding: 0;
+    margin: 0;
+}
+.main-content {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
