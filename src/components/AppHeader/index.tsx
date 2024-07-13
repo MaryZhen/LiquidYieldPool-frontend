@@ -7,6 +7,7 @@ import WalletButton from '../WalletButton';
 import NetworkButton from '../NetworkButton';
 import { MenuOutlined } from '@ant-design/icons'
 import { useResponsive } from '@/hooks/useResponsive';
+import WalletModal from '../WalletModal';
 const { Header, Sider } = Layout;
 const AppHeader = () => {
   const { isDeskTop } = useResponsive()
@@ -78,6 +79,7 @@ const AppHeader = () => {
             )}
           </Col>
         </Row>
+        <WalletModal />
     </Header>
   )
 }
