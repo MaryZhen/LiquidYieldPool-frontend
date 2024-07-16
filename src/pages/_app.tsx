@@ -11,13 +11,13 @@ function Wrapper({ Component, pageProps }) {
   useResponsiveInit(); // add the responsive init
   listenToWallet();
   return (
-    <>
+    <div style={{height: '100vh', overflow: 'hidden', position: 'relative'}}>
       <AppHeader />
       <Content>
         <Component {...pageProps} />
       </Content>
       <AppFooter />
-    </>
+    </div>
   )
 }
 export default function App({ Component, pageProps }: AppProps) {
