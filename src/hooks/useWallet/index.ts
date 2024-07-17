@@ -18,7 +18,7 @@ import {VALID_CHAINS} from '@src/utils/validnet'
 // function checkMetaMask() {
 //     return (window as any)?.ethereum?.isMetaMask;
 // }
-export function listenToWallet() {
+export function useListenToWallet() {
     const dispatch = useDispatch();
     let walletAddress = useSelector(selectWalletAddress);
   
@@ -32,7 +32,7 @@ export function listenToWallet() {
         handleAccountsChanged(account)
       }, [account]);
 
-    async function handleAccountsChanged(account) {
+    const handleAccountsChanged = async (account) => {
         if (!account) {
           // MetaMask is locked or the user has not connected any accounts
           // message.warning('Please connect to your wallet.');
@@ -47,7 +47,7 @@ export function listenToWallet() {
         }
       }
   
-    async function handleChainChanged(chainId) {
+    const handleChainChanged = (chainId) => {
       const chain = chains.find(v => v.chainId == chainId); // 这里不能使用VALID_CHAINS,因为这个里面的对象属性logo是个函数，无法序列化
       dispatch(setWalletChain(chain));
     }

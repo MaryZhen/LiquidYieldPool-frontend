@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './FarmingForm.module.scss'
 import { useMemo, useState, useEffect } from 'react'
 import {useWallet} from '@src/hooks/useWallet'
@@ -173,12 +174,12 @@ export function FarmingForm(props: FarmingFormProps) {
                                 { props.title }
                             </Col>
                             <Col className={styles['record-value']}>
-                            <a href='/'
+                            <Link href='/'
                                 className={styles['link']}
                                 style={{ background: '#D9EE77' }}
                             >
                                 GET {props.depositSymbol}
-                            </a>
+                            </Link>
                             </Col>
                         </Row>
                     </Col>
