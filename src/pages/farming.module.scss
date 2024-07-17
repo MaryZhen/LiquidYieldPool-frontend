@@ -1,0 +1,59 @@
+@import "@src/styles/var.scss";
+
+.intro {
+  // padding-top: var(--header-height);
+  padding-top: 1px;
+  color: #ffffff;
+
+  h2 {
+    color: #ffffff;
+  }
+}
+
+.container {
+  background-color: #000000;
+  height: calc(100vh - 210px);
+  overflow: auto;
+}
+
+.stake-title,
+.info {
+  margin-top: 0px;
+}
+
+.stake-title {
+  font-size: 0.4rem;
+}
+.stake-subtitle {
+  width: 100%;
+  font-size: 0.2rem;
+  color: #ffffff;
+}
+.info {
+  width: 100%;
+  padding: 60px 30px;
+  border-radius: 6px;
+  background: #303030a0;
+  font-size: 0.2rem;
+  line-height: 28px;
+  font-family: PingfangSC, Roboto;
+}
+
+.staking {
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: transparent;
+}
+
+.wallet-button {
+  width: 287px;
+  height: 54px;
+}
+
+.link {
+  color: #ffb852;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
