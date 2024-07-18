@@ -10,7 +10,7 @@ export const useResponsiveInit = () => {
         const isDeskTop = window.innerWidth > 768;
         dispatch(setMediaquery(isDeskTop));
     };
-    useEffect(() => {
+    useEffect(() => { // watch the window resize
         _setMediaQuery();
         window.addEventListener('resize', _setMediaQuery)
     }, []);

@@ -11,7 +11,7 @@ import { useListenToWallet } from '@src/hooks/useWallet'
 function Wrapper({ Component, pageProps }) {
   const { Content } = Layout;
   useResponsiveInit(); // add the responsive init
-  useListenToWallet();
+  useListenToWallet(); // add the wallet connect init
   return (
     <div style={{height: '100vh', overflow: 'hidden', position: 'relative'}}>
       <AppHeader />

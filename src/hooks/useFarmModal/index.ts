@@ -1,3 +1,7 @@
+// this hook is used to get the state of the farmModal
+// farmModal is a child component of  FarmForm component
+// the hook let the button in the FarmForm can open the farmModal
+
 import { useSelector, useDispatch } from "react-redux";
 import {
     selectFarmModalVisible,

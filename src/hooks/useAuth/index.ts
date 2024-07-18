@@ -1,5 +1,7 @@
+/**
+ * this is a hook for walletConnect and Disconnect
+*/
 import { useCallback, useEffect } from 'react';
-import { Web3Provider } from '@ethersproject/providers';
 import { useWeb3React } from '@web3-react/core'
 import {message} from 'antd'
 import {connections} from '@src/utils/web3React'

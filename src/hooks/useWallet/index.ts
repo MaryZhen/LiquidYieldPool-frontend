@@ -25,10 +25,10 @@ export function useListenToWallet() {
     const { chainId, account } = useWeb3React()
     console.info('chainId', chainId)
   
-    useEffect(() => {
+    useEffect(() => { // watch the chain change
       handleChainChanged(chainId);
     }, [chainId]);
-    useEffect(() => {
+    useEffect(() => { // watch the account change
         handleAccountsChanged(account)
       }, [account]);
 
